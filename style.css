@@ -1,0 +1,108 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    perspective: 1000px;
+    background: url('https://www.kiranaking.com/images/logo.png');
+    background-repeat: repeat-x;
+}
+
+.container {
+    /* background: #f54642; */
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+}
+
+.card {
+    transform-style: preserve-3d;
+    min-height: 80vh;
+    width: 30rem;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4), 0 0 50px rgba(0, 0, 0, 0.4);
+    padding: 0rem 5rem;
+    border-radius: 30px;
+}
+
+.product {
+    min-height: 35vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product img {
+    width: 7rem;
+    z-index: 2;
+    transition: all 0.75s ease-out;
+}
+
+.circle {
+    height: 15rem;
+    width: 15rem;
+    background: linear-gradient( to right, #07b, #7c3);
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.info h1 {
+    font-size: 2rem;
+    transition: all 0.75s ease-out;
+}
+
+.info h3 {
+    font-size: 1.3rem;
+    padding: 2rem 0rem;
+    color: #585858;
+    font-weight: lighter;
+    transition: all 0.75s ease-out;
+}
+
+.quantity {
+    display: flex;
+    justify-content: space-between;
+    transition: all 0.75s ease-out;
+}
+
+.quantity button {
+    padding: 0.5rem 2rem;
+    background: none;
+    border: none;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #585858;
+}
+
+button .active {
+    background: #585858;
+    color: white;
+}
+
+.purchase {
+    margin-top: 5rem;
+    transition: all 0.75s ease-out;
+}
+
+.purchase button {
+    width: 100%;
+    padding: 0.40rem 0rem;
+    background: #f54642 ;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 30px;
+    font-weight: bolder;
+    transition: all 0.75s ease-out;
+}
